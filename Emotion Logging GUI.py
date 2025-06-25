@@ -7,8 +7,8 @@ import time
 import numpy as np
 import os
 
-# Set the download path
-download_path = "/Users/joyceliyue/Downloads"
+# Set the download path to your computer here
+download_path = ""
 
 # List to store emotions (time, valence, arousal)
 emotions = []
@@ -88,8 +88,8 @@ def save_emotions(event):
         print("Saving emotions, verifying structure...")
         print(emotions)  # Debugging output
         
-        filename = os.path.join(download_path, f'emotions_log_{song_filename}.csv')
-        image_filename = os.path.join(download_path, f'emotions_log_{song_filename}.png')
+        filename = os.path.join(download_path, f'emotions_log_{song_filename}.csv') #Set desired name here
+        image_filename = os.path.join(download_path, f'emotions_log_{song_filename}.png') #Set desired name here
         
         try:
             df = pd.DataFrame(emotions, columns=['Timestamp', 'Song', 'Valence', 'Arousal', 'Quadrant Color'])

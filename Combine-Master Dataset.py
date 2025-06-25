@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # Set your input folder path
-input_folder = '/Users/joyceliyue/Downloads/thesis files/OLS (3.22.25) ANALYSIS /MERGED FILES W Rate of Tempo Change, Tempo Change Percentage, and Arousal Change/Normalized CSV Files'  # Replace with your folder containing CSV files
+input_folder = ''  # Replace with your folder containing CSV files
 output_file = 'combined_output.csv'  # Output filename
 
 # List to hold data from each CSV
